@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Box-Icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hrithik Menon</title>
+
+    <script>
+        function validate() {
+            var name = document.getElementsByName("name")
+            var email = document.getElementsByName("email")
+
+            if (name.value == "" || name.value == null || email.value == "" || email.value == null) {
+                alert("Fill the required columns");
+                return false;
+
+            }
+            else {
+                alert("Message sent");
+                return true;
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION MENU -->
+
+    <header>
+        <div class="navbar container">
+            <div class="logo">
+                <a href="#" class="navbar-brand">HM</a>
+            </div>
+
+            <div class="menu d-none d-md-block">
+                <ul class="list-unstyled d-flex">
+                    <li><a class="nav-link" href="#hero">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#resume">Resume</a></li>
+                    <li><a class="nav-link" href="#services">Sevices</a></li>
+                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu d-md-none">
+                <button class="btn rounded-0 text-white" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class='bx bx-align-right'></i></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <ul class="list-unstyled d-flex flex-column align-items-center">
+                            <li><a class="nav-link" href="#hero">Home</a></li>
+                            <li><a class="nav-link" href="#about">About</a></li>
+                            <li><a class="nav-link" href="#resume">Resume</a></li>
+                            <li><a class="nav-link" href="#services">Sevices</a></li>
+                            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                            <li><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="hero">
+        <div class="container d-flex justify-content-center align-items-center ">
+            <div class="hero-content text-center">
+                <h1>Hrithik C Menon</h1>
+                <p>An evolving programmer. An inquisite learner.</p>
+                <a href="#about"><i class='bx bxs-chevron-down'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION END -->
+
+    <!-- ============================================ -->
+
+    <!-- ABOUT SECTION START -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <span>ABOUT ME</span>
+                <h2>ABOUT ME</h2>
+                <p class="lead">Hey, I'm an evolving programmer trying to learn HTML and CSS currently.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/IMG_20220315_154712.jpg" class="img-fluid" alt="Hrithik Menon">
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled">
+                                    <li><i class='bx bx-user'></i>
+                                        <p><strong>Name: </strong>Hrithik C Menon</p>
+                                    </li>
+                                    <li><i class='bx bx-globe'></i>
+                                        <p><strong>Website: </strong>www.hrithikmenon.com</p>
+                                    </li>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <ul class="list-unstyled">
+                                    <li><i class='bx bx-mail-send'></i>
+                                        <p><strong>Email: </strong>hrithikmenon1998@gmail.com</p>
+                                    </li>
+                                    <li><i class='bx bxs-phone-call'></i>
+                                        <p><strong>Phone: </strong>+91 6238932969</p>
+                                    </li>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="count-box">
+                                    <i class='bx bx-happy-beaming'></i>
+                                    <div>
+                                        <span data-purecounter-start="0" data-purecounter-end="232"
+                                            data-purecounter-duration="1" class="purecounter">
+                                            0
+                                        </span>
+
+                                        <p>HAPPY CLIENTS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="count-box">
+                                    <i class='bx bx-desktop'></i>
+                                    <div>
+                                        <span data-purecounter-start="0" data-purecounter-end="541"
+                                            data-purecounter-duration="1" class="purecounter">
+                                            2
+                                        </span>
+
+                                        <p>PROJECTS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="count-box">
+                                    <i class='bx bx-coffee'></i>
+                                    <div>
+                                        <span data-purecounter-start="0" data-purecounter-end="4"
+                                            data-purecounter-duration="1" class="purecounter">
+                                            2
+                                        </span>
+
+                                        <p>MONTHS OF EXPERIENCE</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="count-box">
+                                    <i class='bx bxs-award'></i>
+                                    <div>
+                                        <span data-purecounter-start="0" data-purecounter-end="7"
+                                            data-purecounter-duration="1" class="purecounter">
+                                            0
+                                        </span>
+
+                                        <p>AWARDS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION END -->
+
+    <!-- ============================================ -->
+
+    <!--RESUME STARTS-->
+
+    <section class="resume" id="resume">
+        <div class="container">
+            <div class="section-title">
+                <span>RESUME</span>
+                <h2>RESUME</h2>
+
+                <p class="lead">
+                    <i>
+                        First Name : Hrithik <br>
+                        Last Name : Menon <br>
+                        Phone Number : +91 6238932969 <br>
+                        e-mail : hrithikmenon1998@gmail.com <br>
+                        Address: Thachethu House,A V George Road,Kureekadu,682305,Tripunithura,Ekm
+                        <br> <br>
+                        Im Looking for a designation as a Software Engineer in an IT firm. I have completed my BCA
+                        Degree and I have developed my skills in frontend development ,especially in HTML and CSS.
+                </p>
+                </i>
+
+            </div>
+
+
+    </section>
+
+
+    <!--RESUME ENDS-->
+
+    <!-- PORTFOLIO SECTION -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <span>PORTFOLIO</span>
+                <h2>PORTFOLIO</h2>
+                <p class="lead">Here are my two Web Design Work I did while learning HTML and CSS</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="icon-box shadow">
+                        
+
+                        <h4 class="title">Netflix website design</h4>
+                        <p class="description">My first and successful attempt to build a clone frontend for Netflix. Do
+                            check it out please :</p>
+
+                        <div class="portfolio-link">
+                            <a href="https://hrithikmenon.github.io/Netflix/" class="btn btn-visit"><i
+                                    class='bx bx-link-alt'></i>Visit Site</a>
+                            <a href="https://github.com/HrithikMenon/Netflix.git" class="btn btn-code"><i
+                                    class='bx bxl-github'></i>Visit Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="icon-box shadow">
+                        
+
+                    
+                        <h4 class="title">Youtube website design</h4>
+                        <p class="description">As a part of learning html and css,I designed a clone website of
+                            youtube.Check it out please :</p>
+
+                        <div class="portfolio-link">
+                            <a href="https://hrithikmenon.github.io/Youtube" class="btn btn-visit"><i
+                                    class='bx bx-link-alt'></i>Visit Site</a>
+                            <a href="https://github.com/HrithikMenon/Youtube.git" class="btn btn-code"><i
+                                    class='bx bxl-github'></i>Visit Code</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION END -->
+
+    <!-- ============================================ -->
+
+    <!-- SERVICE SECTION START-->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <span>MY SERVICES</span>
+                <h2>MY SERVICES</h2>
+                <p class="lead">Here are my Web Design Services</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="icon-box shadow mt-4 p-5">
+                        <div class="icon ">
+                            <i class='bx bxl-youtube'></i>
+                            <h4 class="title">Youtube</h4>
+                            <p class="description">I did my first website project of youtube site as the part of my
+                                learning
+                                of html and css</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="icon-box shadow mt-4 p-5">
+                        <div class="icon">
+                            <i class='bx bx-world'></i>
+                            <h4 class="title">Public Website</h4>
+                            <p class="description">I am working on a project on parallel,using bootstrap
+                                technology,which is
+                                a public website.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- SERVICE SECTION END -->
+
+
+    <!-- ============================================ -->
+
+    <!-- CONTACT SECTION START-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <span>CONTACT ME</span>
+                <h2>CONTACT ME</h2>
+                <p class="lead">Contact me for Services</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box-inform">
+                                <i class="bx bx-share-alt"></i>
+                                <h3 class="title">Social Profiles</h3>
+                                <div class="social-links">
+                                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                                    <a href="#"><i class="bx bxl-skype"></i></a>
+                                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="box-inform mt-4 box-one">
+                                <i class="bx bx-envelope"></i>
+                                <h3 class="title">Email Me</h3>
+                                <p>hrithikmenon1998@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="box-inform mt-4 box-two">
+                                <i class="bx bx-phone-call"></i>
+                                <h3 class="title">Call Me</h3>
+                                <p>+91 6238932969</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="#" method="post" id="frmSubmit">
+                        <div class="row">
+                            <div class="col-md-6 form-section">
+                                <input class="nm" type="text" name="name" placeholder="Your Name">
+                            </div>
+
+                            <div class="col-md-6 form-section em-2 mt-3 mt-md-0">
+                                <input class="em" type="email" name="email" placeholder="Your Email">
+                            </div>
+                        </div>
+
+                        <div class="form-section mt-3">
+                            <input class="sub" type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-section mt-3">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message"></textarea>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button class="btn-one" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION END -->
+
+    <!-- ============================================ -->
+
+    <!-- FOOTER SECTION START-->
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>Hrithik Menon</h3>
+                <p><i>Thank You for visiting my Website.</i></p>
+
+
+                <div class="social-links">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Hrithik</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+        </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="js/purecounter.js"></script>
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+
+</body>
+
+</html>
